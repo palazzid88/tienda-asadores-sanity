@@ -10,6 +10,16 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      name: 'slug',
+      title: 'Slug',
+      type: 'slug',
+      options: {
+        source: 'title',
+        maxLength: 96,
+      },
+      validation: Rule => Rule.required()
+    },
+    {
       name: 'image',
       title: 'Imagen del producto',
       type: 'image',

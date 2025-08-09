@@ -7,8 +7,8 @@ export default defineConfig({
   name: 'default',
   title: 'tienda-asadores',
 
-  projectId: process.env.SANITY_PROJECT_ID,
-  dataset: process.env.SANITY_DATASET,
+  projectId: process.env.SANITY_PROJECT_ID || 'vg5z6j7a'  ,
+  dataset: process.env.SANITY_DATASET || 'production',
 
   plugins: [structureTool(), visionTool()],
 
